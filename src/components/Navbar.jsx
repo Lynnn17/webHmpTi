@@ -38,7 +38,7 @@ const Navbar = () => {
           'url("https://bemfilkom.ub.ac.id/assets/bgcorak-OepKPvdH.svg")',
       }}
     >
-      <div className="flex flex-shrink-0 items-center pl-4">
+      <div className="flex flex-shrink-0 items-center pl-6 ">
         <img src={Logo} width={50} alt="HMP TI UNESA" />
       </div>
       <div className="hidden m-8 md:flex text-white items-center justify-center gap-4 text-1xl">
@@ -88,7 +88,7 @@ const Navbar = () => {
           </button>
           {/* Departement */}
           {dropdownVisible && (
-            <div className="absolute rounded-lg text-white  py-2 mt-2 flex flex-col">
+            <div className="absolute  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] rounded-lg text-white  py-2 mt-2 flex flex-col">
               <a
                 href="#"
                 className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
@@ -155,7 +155,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Navbar */}
-      <button className="block sm:hidden" onClick={handleSideBar}>
+      <button className="block sm:hidden pr-2" onClick={handleSideBar}>
         <svg
           className="w-10 h-7 "
           width="24"
