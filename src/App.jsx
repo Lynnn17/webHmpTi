@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import Navbar from "./components/Navbar";
+import Tentang from "./components/Tentang";
 import Welcome from "./components/Welcome";
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Navbar />
         <Home />
         <Welcome />
+        <Tentang />
       </div>
     </div>
   );

@@ -19,9 +19,9 @@ const Home = () => {
               <span className="lg:-mt-10 -mt-5 text-nowrap ">UNESA 2024</span>
             </div>
           </div>
-          <div className="flex lg:justify-end items-center justify-center xl:flex-initial xl:w-2/4 ">
+          <div className="flex lg:justify-end items-center justify-center xl:flex-initial 2xl:w-2/4 ">
             <img
-              className=" mt-10 sm:w-[600px] w-[350px] lg:w-[600px] xl:w-[750px] lg:h-full "
+              className=" mt-10 sm:w-[600px] w-[350px] lg:w-[600px] 2xl:w-[750px] lg:h-full "
               src={gedungTi}
               alt="Gedung TI Unesa"
             />
@@ -29,7 +29,7 @@ const Home = () => {
         </div>
         <div>
           <img
-            className="xl:w-full"
+            className="2xl:w-full"
             src="https://bemfilkom.ub.ac.id/assets/awanKrem-CFGhF021.png"
             alt="Gambar awan krem"
           />
