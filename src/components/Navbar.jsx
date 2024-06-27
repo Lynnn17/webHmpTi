@@ -39,7 +39,7 @@ const Navbar = () => {
       }}
     >
       <div className="flex flex-shrink-0 items-center pl-6 ">
-        <img src={Logo} width={50} alt="HMP TI UNESA" />
+        <img className="lg:w-[50px]" src={Logo} width={30} alt="HMP TI UNESA" />
       </div>
       <div className="hidden m-8 md:flex text-white items-center justify-center gap-4 text-1xl">
         <a
