@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Kahim from "../assets/kahim.png";
 import Wakahim from "../assets/wakahim.png";
+
 const Welcome = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -53,7 +54,7 @@ const Welcome = () => {
           </div>
 
           {/* WAKAHIM */}
-          <div className="mt-8 lg:mt-0 flex flex-col  items-center ">
+          <div className="xl:order-last mt-8 lg:mt-0 flex flex-col  items-center ">
             <button
               type="button"
               className="ring-1 ring-[#208b71] bg-[#208b71] hover:bg-green outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-20 rounded-full"

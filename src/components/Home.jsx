@@ -1,13 +1,17 @@
 import gedungTi from "../assets/gedungTi.png";
+
 const Home = () => {
   return (
     <div>
       <div
-        className="w-full h-full lg:bg-cover"
-        style={{
-          backgroundImage:
-            'url("https://bemfilkom.ub.ac.id/assets/bgcorak-OepKPvdH.svg")',
-        }}
+        className=" w-full h-full"
+        // style={{
+        //   backgroundImage:
+        //     'url("https://bemfilkom.ub.ac.id/assets/bgcorak-OepKPvdH.svg")',
+        // }}
+        // style={{
+        //   backgroundImage: `url(${Bg})`,
+        // }}
       >
         <div className="py-20 h-full lg:flex xl:justify-center  ">
           <div className="flex flex-col px-16 lg:items-start lg:justify-left  items-center justify-center">

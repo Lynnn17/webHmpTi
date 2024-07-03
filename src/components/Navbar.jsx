@@ -31,13 +31,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav
-      className=" py-2 flex items-center justify-between "
-      style={{
-        backgroundImage:
-          'url("https://bemfilkom.ub.ac.id/assets/bgcorak-OepKPvdH.svg")',
-      }}
-    >
+    <nav className=" py-2 flex items-center justify-between ">
       <div className="flex flex-shrink-0 items-center pl-6 ">
         <img className="lg:w-[50px]" src={Logo} width={30} alt="HMP TI UNESA" />
       </div>
@@ -88,7 +82,7 @@ const Navbar = () => {
           </button>
           {/* Departement */}
           {dropdownVisible && (
-            <div className="absolute  bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] rounded-lg text-white  py-2 mt-2 flex flex-col">
+            <div className="absolute  bg-neutral-950 bg-opacity-70 rounded-lg text-white  py-2 mt-2 flex flex-col">
               <a
                 href="#"
                 className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
