@@ -1,4 +1,5 @@
 import gedungTi from "../assets/gedungTi.png";
+import Pembatas from "../assets/pembatas.png";
 
 const Home = () => {
   return (
@@ -31,10 +32,10 @@ const Home = () => {
             />
           </div>
         </div>
-        <div>
+        <div className="">
           <img
-            className="2xl:w-full"
-            src="https://bemfilkom.ub.ac.id/assets/awanKrem-CFGhF021.png"
+            className="h-[150px] xl:w-full"
+            src={Pembatas}
             alt="Gambar awan krem"
           />
         </div>

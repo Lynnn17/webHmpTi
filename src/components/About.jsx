@@ -1,14 +1,14 @@
 import LogoTi from "../assets/logo.png";
+import Bg from "../assets/opsi.png";
 const About = () => {
   return (
     <div
-      className="-mt-1 w-full h-full lg:bg-cover"
+      className="-mt-2 w-full h-full lg:bg-cover  "
       style={{
-        backgroundImage:
-          'url("https://bemfilkom.ub.ac.id/assets/kremBg-CWd6Mabg.svg")',
+        backgroundImage: `url(${Bg})`,
       }}
     >
-      <div className="w-full h-max py-20 xl:pb-[300px] relative ">
+      <div className="w-full h-max py-20 xl:pb-[200px] relative ">
         <img
           className="mx-auto mt-10 w-[500px]  lg:w-[700px]"
           src="https://bemfilkom.ub.ac.id/assets/TentangTittle-BuK75-IC.png"
