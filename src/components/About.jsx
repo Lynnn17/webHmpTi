@@ -62,7 +62,7 @@ const About = () => {
                 style={{ display: "inline-block", marginLeft: "5px" }}
                 data-prefix="fas"
                 data-icon="arrow-right-long"
-                class="svg-inline--fa fa-arrow-right-long relative"
+                className="svg-inline--fa fa-arrow-right-long relative"
                 role="img"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 512 512"

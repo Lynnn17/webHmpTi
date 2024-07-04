@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Welcome from "./components/Welcome";
 import Bg from "./assets/bg.png";
+import Sosmed from "./components/Sosmed";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Welcome />
         <About />
         <Documentation />
+        <Sosmed />
       </div>
     </div>
   );
