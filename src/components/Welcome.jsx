@@ -3,6 +3,7 @@ import Kahim from "../assets/kahim.png";
 import Wakahim from "../assets/wakahim.png";
 import Bg from "../assets/opsi.png";
 import Tag from "../assets/tag.png";
+import Sambutan from "../assets/sambutan.png";
 
 const Welcome = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,19 +16,8 @@ const Welcome = () => {
           backgroundImage: `url(${Bg})`,
         }}
       >
-        <div className="py-10">
-          <div className="py-4 mt-5 flex flex-col items-center justify-center">
-            <img
-              className="mx-auto w-5/6  lg:w-2/4"
-              src="https://bemfilkom.ub.ac.id/assets/sambutan-0_LVhr34.svg"
-              alt="Sambutan"
-            />
-            <img
-              className="lg:w-[200px] mt-2 w-[150px]"
-              src="data:image/svg+xml,<svg width='321' height='8' viewBox='0%200%20321%208' fill='none' xmlns='http://www.w3.org/2000/svg'><line x1='0.5'%20y1='4.5'%20x2='320.5' y2='4.5' stroke='%23BCDB37' stroke-width='3'/><line x1='100.5' y1='4' x2='220.5' y2='4' stroke='%23208B71' stroke-width='8'/></svg>"
-              alt="Garis Bawah"
-            />
-          </div>
+        <div className="py-10 pb-24">
+          <img className="mx-auto mt-10" src={Sambutan} alt="" />
 
           <div className="lg:grid flex-col lg:grid-cols-4 lg:gap-2 py-10 px-2 ">
             {/* Kahim */}

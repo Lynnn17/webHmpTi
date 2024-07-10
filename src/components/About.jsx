@@ -1,5 +1,10 @@
-import LogoTi from "../assets/logo.png";
+import LogoTi from "../assets/logokabinet.png";
 import Bg from "../assets/opsi.png";
+import Pembatas from "../assets/pembatas3.png";
+import PembatasLP from "../assets/9.png";
+import Tentang from "../assets/tentang.png";
+import PembatasBawah from "../assets/pembatas.png";
+
 const About = () => {
   return (
     <div
@@ -8,31 +13,31 @@ const About = () => {
         backgroundImage: `url(${Bg})`,
       }}
     >
-      <div className="w-full h-max py-20 xl:pb-[200px] relative ">
+      <div className="w-full xl:-mt-3 xl:pb-20">
         <img
-          className="mx-auto mt-10 w-[500px]  lg:w-[700px]"
-          src="https://bemfilkom.ub.ac.id/assets/TentangTittle-BuK75-IC.png"
-          alt="Gambar Tentang"
+          className="absolute xl:hidden  md:-mt-15 -mt-10 xl:-mt-20"
+          src={Pembatas}
+          alt=""
         />
         <img
-          className="h-20 mt-20  xl:h-60 left-0 top-0 absolute xl:-top-8"
-          src="https://bemfilkom.ub.ac.id/assets/daunKiri-Ds23qS7B.png"
-          alt="daun kiri"
+          className="absolute hidden xl:flex  md:-mt-15 -mt-10 xl:-mt-20"
+          src={PembatasLP}
+          alt=""
         />
-        <img
-          className="h-20 mt-20  xl:h-60 right-0 top-0 absolute xl:-top-8"
-          src="https://bemfilkom.ub.ac.id/assets/daunKanan-BCLFADNB.png"
-          alt="daun kiri"
-        />
-        <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[120px]">
+      </div>
+
+      <div className="w-full h-max pt-14 pb-8 md:pt-28 xl:pb-[200px] relative ">
+        <img className="mx-auto " src={Tentang} alt="Gambar Tentang" />
+
+        <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[200px] ">
           <img
-            className="w-40 h-full mx-auto xl:hidden"
+            className="w-52 md:w-72 h-full mx-auto xl:hidden"
             src={LogoTi}
             alt="logo ti"
           />
           {/* gambar logo view laptop */}
-          <div className="order-last hidden relative xl:flex justify-center items-center  h-[26rem] mt-20 mx-auto">
-            <img className=" " src={LogoTi} alt="logo ti" />
+          <div className="order-last hidden relative xl:flex justify-center items-center w-[30rem] h-[26rem] mt-28  mx-auto">
+            <img className="" src={LogoTi} alt="logo ti" />
           </div>
           <div className="mx-8 xl:mx-0   xl:w-[35rem] ">
             <h3 className="text-start font-bold xl:font-extrabold text-lg xl:text-[32px] mt-8 mb-4 xl:mb-8 text-[#252525]">
@@ -52,7 +57,7 @@ const About = () => {
               ducimus adipisci incidunt harum magni sunt assumenda obcaecati,
               eos temporibus voluptates velit ex! Ad.
             </p>
-            <button className=" w-max ring-1 ring-[#dd7802] text-[#dd7802] hover:bg-[#dd7802] hover:text-white rounded-full px-6 py-2 xl:text-xl">
+            <button className=" w-max ring-1 ring-[#304463] text-[#304463] hover:bg-[#304463] hover:text-white rounded-full px-6 py-2 xl:text-xl">
               Lihat Selengkapnya
               <svg
                 aria-hidden="true"
@@ -75,6 +80,13 @@ const About = () => {
             </button>
           </div>
         </div>
+      </div>
+      <div>
+        <img
+          className="h-[150px] w-full"
+          src={PembatasBawah}
+          alt="Pembatas Kertas"
+        />
       </div>
     </div>
   );

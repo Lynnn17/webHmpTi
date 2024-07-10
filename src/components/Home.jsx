@@ -4,16 +4,7 @@ import Pembatas from "../assets/pembatas.png";
 const Home = () => {
   return (
     <div>
-      <div
-        className=" w-full h-full"
-        // style={{
-        //   backgroundImage:
-        //     'url("https://bemfilkom.ub.ac.id/assets/bgcorak-OepKPvdH.svg")',
-        // }}
-        // style={{
-        //   backgroundImage: `url(${Bg})`,
-        // }}
-      >
+      <div className=" w-full h-full">
         <div className="py-20 h-full lg:flex xl:justify-center  ">
           <div className="flex flex-col px-16 lg:items-start lg:justify-left  items-center justify-center">
             <h1 className="text-white text-[20px] sm:text-[35px] md:w-full sm:text-center lg:text-start lg:text-[30px] pt-6 lg:pt-0 font-regular">
@@ -34,7 +25,7 @@ const Home = () => {
         </div>
         <div className="">
           <img
-            className="h-[150px] xl:w-full"
+            className="h-[150px] w-full"
             src={Pembatas}
             alt="Gambar awan krem"
           />

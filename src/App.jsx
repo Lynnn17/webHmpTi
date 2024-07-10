@@ -5,6 +5,8 @@ import About from "./components/About";
 import Welcome from "./components/Welcome";
 import Bg from "./assets/bg.png";
 import Sosmed from "./components/Sosmed";
+import Tes from "./components/Tes";
+import Profile from "./components/Profile";
 
 function App() {
   return (
@@ -20,8 +22,9 @@ function App() {
         <Home />
         <Welcome />
         <About />
-        <Documentation />
-        <Sosmed />
+        <Profile />
+        {/* <Sosmed />
+        <Tes /> */}
       </div>
     </div>
   );
