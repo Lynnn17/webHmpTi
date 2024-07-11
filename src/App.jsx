@@ -5,7 +5,7 @@ import About from "./components/About";
 import Welcome from "./components/Welcome";
 import Bg from "./assets/bg.png";
 import Sosmed from "./components/Sosmed";
-import Tes from "./components/Tes";
+import Footer from "./components/Footer";
 import Profile from "./components/Profile";
 
 function App() {
@@ -25,6 +25,7 @@ function App() {
         <Profile />
         {/* <Sosmed />
         <Tes /> */}
+        <Footer />
       </div>
     </div>
   );

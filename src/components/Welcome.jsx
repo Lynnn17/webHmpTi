@@ -19,7 +19,7 @@ const Welcome = () => {
         <div className="py-10 pb-24">
           <img className="mx-auto mt-10" src={Sambutan} alt="" />
 
-          <div className="lg:grid flex-col lg:grid-cols-4 lg:gap-2 py-10 px-2 ">
+          <div className="md:grid flex-col  lg:grid-cols-4 lg:gap-2 md:grid-cols-2 py-10 px-2 ">
             {/* Kahim */}
             <div className="flex flex-col  items-center ">
               <img
@@ -48,7 +48,7 @@ const Welcome = () => {
             {/* WAKAHIM */}
             <div className="xl:order-last  flex flex-col  items-center ">
               <img
-                className="lg:w-[250px]  mx-auto w-[175px] mt-12 lg:mt-0"
+                className="lg:w-[250px]  mx-auto w-[175px] mt-12 md:mt-2 lg:mt-0"
                 src={Wakahim}
                 alt="Wakahim"
               />
