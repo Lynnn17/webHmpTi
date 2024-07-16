@@ -6,6 +6,59 @@
 
 
 
+
 :root {
   font-family: "Inter", sans-serif;
 }
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.swiper-slide img {
+  
+  object-fit: cover;
+}
+
+.animation-opacity { animation: pulse  5s cubic-bezier(0.4, 0, 0.6, 1) infinite; -webkit-animation: pulse  5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.animation-bounce {
+  animation: bounce 100s infinite;
+  -webkit-animation: bounce 100s infinite;
+}
+    @keyframes bounce {
+  
+      0%,
+      100% {
+        transform: translateX(1%);
+        animation-timing-function: cubic-bezier(1, 1, 1, 1);
+        -webkit-transform: translateX(1%);
+        -moz-transform: translateX(1%);
+        -ms-transform: translateX(1%);
+        -o-transform: translateX(1%);
+}
+  
+      50% {
+        transform: translateX(-1%);
+        animation-timing-function: cubic-bezier(1, 11, 1, 1);
+        -webkit-transform: translateX(-1%);
+        -moz-transform: translateX(-1%);
+        -ms-transform: translateX(-1%);
+        -o-transform: translateX(-1%);
+}
+    }
+

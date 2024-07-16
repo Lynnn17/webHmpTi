@@ -1,33 +1,20 @@
-import Documentation from "./components/Documentation";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Welcome from "./components/Welcome";
-import Bg from "./assets/bg.png";
-import Sosmed from "./components/Sosmed";
-import Footer from "./components/Footer";
-import Profile from "./components/Profile";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Dashboard from "./views/Dashboard";
+import Kabinet from "./views/Kabinet";
+import Departemen from "./views/Departemen";
+import Bph from "./components/Departemen/Bph";
 
 function App() {
   return (
-    <div className="overflow-x-hidden text-neutral-300 antialiased selection:text-cyan-900 selection:bg-cyan-300">
-      <div className="fixed top-0 -z-10 h-full w-full">
-        <div
-          className="fixed top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-center md:bg-cover"
-          style={{ backgroundImage: `url(${Bg})` }}
-        ></div>
-      </div>
-      <div className="">
-        <Navbar />
-        <Home />
-        <Welcome />
-        <About />
-        <Profile />
-        {/* <Sosmed />
-        <Tes /> */}
-        <Footer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />}></Route>
+        <Route path="/kabinet" element={<Kabinet />}></Route>
+        <Route path="/departemen" element={<Departemen />}>
+          <Route path="bph" element={<Bph />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

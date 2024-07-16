@@ -2,7 +2,7 @@ import Logo from "../assets/logokabinet.png";
 const Footer = () => {
   return (
     <div className="-mt-1 bg-[#31363F]">
-      <footer className="grid grid-cols-1 md:grid-cols-3 pt-8 px-12 md:px-24 xl:px-48 items-center justify-center gap-4">
+      <footer className="grid grid-cols-1 md:grid-cols-3 pt-8 px-6 md:px-24 xl:px-48 items-center justify-center gap-4">
         <div className="md:mx-auto w-2/4 md:w-3/4 xl:w-2/4  ">
           <img src={Logo} alt="" />
         </div>

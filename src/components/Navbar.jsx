@@ -31,23 +31,23 @@ const Navbar = () => {
   return (
     <nav className=" py-2 flex items-center justify-between ">
       <div className="flex flex-shrink-0 items-center pl-6 ">
-        <img className="lg:w-[50px]" src={Logo} width={30} alt="HMP TI UNESA" />
+        <img className="md:w-[50px]" src={Logo} width={30} alt="HMP TI UNESA" />
       </div>
       <div className="hidden m-8 md:flex text-white items-center justify-center gap-4 text-1xl">
         <a
-          href="#"
+          href="/"
           className="inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
         >
           Beranda
         </a>
         <a
-          href="#"
+          href="/kabinet"
           className="inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
         >
           Kabinet
         </a>
         <a
-          href="#"
+          href="/tentang"
           className="inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
         >
           Tentang
@@ -78,23 +78,27 @@ const Navbar = () => {
               </svg>
             </svg>
           </button>
-          {dropdownVisible && (
-            <AnimatePresence initial={false}>
-              <motion.div
-                key={"dropdown"}
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 }}
-                exit={{ opacity: 0 }}
-                className="absolute  bg-neutral-950 bg-opacity-70 rounded-lg text-white  py-2 mt-2 flex flex-col"
-              >
+          <AnimatePresence initial={false}>
+            {dropdownVisible && (
+              <motion.div className="absolute  bg-neutral-950 bg-opacity-80 rounded-lg text-white  py-2 mt-2 flex flex-col z-10">
+                <motion.a
+                  key={"bph"}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0 }}
+                  exit={{ opacity: 0 }}
+                  href="/departemen/bph"
+                  className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                >
+                  BPH
+                </motion.a>
                 <motion.a
                   key={"psdm"}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/psdm"
                   className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   PSDM
@@ -105,7 +109,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/penristek"
                   className="w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-4 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   PENRISTEK
@@ -116,7 +120,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.6 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/mnb"
                   className="w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-4 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   MNB
@@ -127,7 +131,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.8 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/kominfo"
                   className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   KOMINFO
@@ -138,7 +142,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/kwu"
                   className="w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-4 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   KWU
@@ -149,7 +153,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.2 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/dagri"
                   className="w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-4 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   DAGRI
@@ -160,7 +164,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.4 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/pe"
                   className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   PE
@@ -171,7 +175,7 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.6 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/agama"
                   className="w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-4 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   AGAMA
@@ -182,25 +186,14 @@ const Navbar = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 1.8 }}
                   exit={{ opacity: 0 }}
-                  href="#"
+                  href="/departemen/deplu"
                   className="w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-4 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                 >
                   DEPLU
                 </motion.a>
-                <motion.a
-                  key={"bph"}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2 }}
-                  exit={{ opacity: 0 }}
-                  href="#"
-                  className=" w-fit px-4 py-2 inline-block relative transition-all duration-500 before:content-[''] before:absolute before:bottom-0 before:left-3 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
-                >
-                  BPH
-                </motion.a>
               </motion.div>
-            </AnimatePresence>
-          )}
+            )}
+          </AnimatePresence>
           {/* Departement */}
         </div>
       </div>
@@ -244,7 +237,7 @@ const Navbar = () => {
         </svg>
       </button>
       {/* Side Bar*/}
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         {sidebarVisible && (
           <motion.aside
             key={"sidebar"}
@@ -280,15 +273,15 @@ const Navbar = () => {
               </button>
               <ul className="mt-10 flex flex-col gap-5 text-black font-inter font-medium pl-5 pr-8  items-start">
                 <li className="w-fit inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100">
-                  <a href="#">Beranda</a>
+                  <a href="/">Beranda</a>
                 </li>
 
                 <li className="w-fit inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100">
-                  <a href="#">Tentang</a>
+                  <a href="/kabinet">Kabinet</a>
                 </li>
 
                 <li className="w-fit inline-block relative transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100">
-                  <a href="#">Kabinet</a>
+                  <a href="/tentang">Tentang</a>
                 </li>
 
                 <li>
@@ -321,6 +314,19 @@ const Navbar = () => {
                     {dropdownVisibleMobile && (
                       <motion.ul className="flex flex-col gap-5 mt-5 ml-3 text-sm">
                         <motion.li
+                          key={"bph"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 0,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/bph">BPH</a>
+                        </motion.li>
+                        <motion.li
                           key={"psdm"}
                           initial={{ opacity: 0, y: 10 }}
                           animate={{ opacity: 1, y: 0 }}
@@ -328,7 +334,7 @@ const Navbar = () => {
                           exit={{ opacity: 0 }}
                           className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                         >
-                          <a href="">PSDM</a>
+                          <a href="/departemen/psdm">PSDM</a>
                         </motion.li>
                         <motion.li
                           key={"penristek"}
@@ -338,7 +344,7 @@ const Navbar = () => {
                           exit={{ opacity: 0 }}
                           className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                         >
-                          <a href="">PENRISTEK</a>
+                          <a href="/departemen/penristek">PENRISTEK</a>
                         </motion.li>
                         <motion.li
                           key={"mnb"}
@@ -351,7 +357,85 @@ const Navbar = () => {
                           exit={{ opacity: 0 }}
                           className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
                         >
-                          <a href="">MNB</a>
+                          <a href="/departemen/mnb">MNB</a>
+                        </motion.li>
+                        <motion.li
+                          key={"kominfo"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 1,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/kominfo">KOMINFO</a>
+                        </motion.li>
+                        <motion.li
+                          key={"kwu"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 1.2,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/kwu">KWU</a>
+                        </motion.li>
+                        <motion.li
+                          key={"dagri"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 1.4,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/dagri">DAGRI</a>
+                        </motion.li>
+                        <motion.li
+                          key={"pe"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 1.6,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/pe">PE</a>
+                        </motion.li>
+                        <motion.li
+                          key={"agama"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 1.8,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/agama">AGAMA</a>
+                        </motion.li>
+                        <motion.li
+                          key={"deplu"}
+                          initial={{ y: 10, opacity: 0 }}
+                          animate={{ y: 0, opacity: 1 }}
+                          transition={{
+                            delay: 2,
+                            opacity: 0,
+                          }}
+                          exit={{ opacity: 0 }}
+                          className="w-fit relative  transition-all duration-500 before:content-[''] before:absolute before:-bottom-2 before:left-0 before:w-0 before:h-0.5 before:rounded-full before:opacity-0 before:transition-all before:duration-500 before:bg-blue-900 hover:before:w-full hover:before:opacity-100"
+                        >
+                          <a href="/departemen/deplu">DEPLU</a>
                         </motion.li>
                       </motion.ul>
                     )}
