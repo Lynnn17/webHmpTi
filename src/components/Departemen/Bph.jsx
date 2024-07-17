@@ -3,13 +3,13 @@ import Bg from "../../assets/opsi.png";
 import Tentang from "../../assets/tentang.png";
 import PembatasBawah from "../../assets/pembatas.png";
 import bphfoto from "../../assets/departemen/bph.png";
-
+import chco from "../../assets/departemen/chco.png";
 const Bph = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div
-      className="-mt-20 w-full h-full lg:bg-cover  "
+      className="-mt-20 w-full h-full bg-cover  "
       style={{
         backgroundImage: `url(${Bg})`,
       }}
@@ -66,14 +66,18 @@ const Bph = () => {
               {isOpen ? "\n Lihat Lebih Sedikit" : "Lihat Selengkapnya "}
             </button>
           </div>
+          <div className="flex">
+            <img className="w-[50%]" src={chco} alt="Pembatas Kertas" />
+            <img className="w-[50%]" src={chco} alt="Pembatas Kertas" />
+          </div>
         </div>
       </div>
       <div>
-        <img
+        {/* <img
           className="h-[150px] w-full"
           src={PembatasBawah}
           alt="Pembatas Kertas"
-        />
+        /> */}
       </div>
     </div>
   );

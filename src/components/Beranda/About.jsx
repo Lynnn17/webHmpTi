@@ -15,7 +15,7 @@ const About = () => {
     >
       <div className="w-full xl:-mt-3 xl:pb-20 md:pb-8">
         <img
-          className="absolute xl:hidden  md:-mt-15 -mt-10 xl:-mt-20"
+          className="absolute xl:hidden sm:-mt-14  md:-mt-15 -mt-10 xl:-mt-20"
           src={Pembatas}
           alt=""
         />

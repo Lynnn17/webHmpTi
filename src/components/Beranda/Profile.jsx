@@ -29,8 +29,8 @@ const Profile = () => {
             <div className="w-full md:hidden flex  justify-center items-center">
               <YouTubeEmbed
                 url="https://www.youtube.com/embed/BBzbQAXkQxk?si=2VfwSTRzczZQhy3h"
-                height={"200px"}
-                width={"75%"}
+                height={"270px"}
+                width={"85%"}
               />
             </div>
           </div>

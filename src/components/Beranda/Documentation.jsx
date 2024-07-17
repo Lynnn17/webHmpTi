@@ -33,37 +33,70 @@ function Documentation() {
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          initialSlide={1}
+          initialSlide={2}
           loop={false}
           slidesPerView={1}
           coverflowEffect={{
             rotate: 3,
             stretch: 0,
-            depth: 900,
+            depth: 650,
             modifier: 2.5,
+          }}
+          breakpoints={{
+            640: {
+              coverflowEffect: {
+                rotate: 3,
+                stretch: 0,
+                depth: 980,
+                modifier: 2.5,
+              },
+            },
+            // ketika ukuran layar >= 1024px
+            1024: {
+              coverflowEffect: {
+                rotate: 3,
+                stretch: 0,
+                depth: 980,
+                modifier: 3,
+              },
+            },
           }}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="mt-8 h-[220px]  md:h-[380px]  xl:h-[570px] 2xl:h-[850px]"
+          className="mt-8"
         >
-          <SwiperSlide className="">
+          <SwiperSlide className="mb-6 md:mb-8">
             <img
               src={Gambar1}
-              className="w-[75%] mx-auto rounded-3xl"
+              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
               alt="slide_image"
             />
           </SwiperSlide>
-          <SwiperSlide className="">
+          <SwiperSlide className="mb-6 md:mb-6">
             <img
               src={Gambar2}
-              className="w-[75%] mx-auto rounded-3xl"
+              className="w-[65%] sm:w-[50%]  mx-auto rounded-3xl"
               alt="slide_image"
             />
           </SwiperSlide>
-          <SwiperSlide className="">
+          <SwiperSlide className="mb-6 md:mb-8">
             <img
               src={Gambar3}
-              className="w-[75%] mx-auto rounded-3xl"
+              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
+              alt="slide_image"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="mb-6 md:mb-8">
+            <img
+              src={Gambar3}
+              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
+              alt="slide_image"
+            />
+          </SwiperSlide>
+          <SwiperSlide className="mb-6 md:mb-8">
+            <img
+              src={Gambar3}
+              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
               alt="slide_image"
             />
           </SwiperSlide>

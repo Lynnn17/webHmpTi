@@ -14,11 +14,32 @@
 .swiper-slide-shadow-right {
   display: none;
 }
+/* 
+@media (max-width: 500px) {
+ 
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+
+  .swiper-slide img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
 
 .swiper-slide img {
-  
+  width: 40rem;
+  height: 100%;
+  border-radius: 2rem;
   object-fit: cover;
 }
+
+.swiper-slide {
+  width: 40rem;
+  height: 100%;
+  position: relative;
+} */
 
 .animation-opacity { animation: pulse  5s cubic-bezier(0.4, 0, 0.6, 1) infinite; -webkit-animation: pulse  5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }

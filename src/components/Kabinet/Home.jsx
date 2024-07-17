@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div>
       <div className="w-full h-max pb-8  xl:pb-[200px] relative ">
-        <img className="mx-auto " src={Tentang} alt="Gambar Tentang" />
+        {/* <img className="mx-auto " src={Tentang} alt="Gambar Tentang" /> */}
 
         <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[50px] ">
           <img
