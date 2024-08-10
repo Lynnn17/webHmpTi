@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Kahim from "../../assets/kahim.png";
 import Wakahim from "../../assets/wakahim.png";
-import Bg from "../../assets/opsi.png";
+import Bg from "../../assets/bgabu.png";
 import Tag from "../../assets/tag.png";
 import Sambutan from "../../assets/sambutan.png";
 
@@ -123,7 +123,7 @@ const Welcome = () => {
           </div>
 
           <div>
-            <span className="flex font-extrabold text-[#304463] justify-center mx-auto lg:text-[28px] text-[20px]">
+            <span className="flex font-extrabold text-[#304463] justify-center mx-auto lg:text-[28px] text-[20px] 2xl:pb-2  ">
               #SatukanGagasCiptakanKarya
             </span>
           </div>

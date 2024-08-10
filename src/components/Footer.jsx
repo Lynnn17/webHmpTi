@@ -1,4 +1,4 @@
-import Logo from "../assets/logokabinet.png";
+import Logo from "../assets/logohmp.png";
 const Footer = () => {
   return (
     <div className="-mt-1 bg-[#31363F]">

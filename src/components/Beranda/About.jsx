@@ -1,7 +1,7 @@
-import LogoTi from "../../assets/logokabinet.png";
-import Bg from "../../assets/opsi.png";
+import LogoTi from "../../assets/logohmp.png";
+import Bg from "../../assets/bgabu.png";
 import Pembatas from "../../assets/pembatas3.png";
-import PembatasLP from "../../assets/9.png";
+import PembatasLP from "../../assets/pembataslp.png";
 import Tentang from "../../assets/tentang.png";
 import PembatasBawah from "../../assets/pembatas.png";
 
@@ -20,26 +20,26 @@ const About = () => {
           alt=""
         />
         <img
-          className="absolute hidden xl:flex  md:-mt-15 -mt-10 xl:-mt-18"
+          className="absolute hidden xl:flex  md:-mt-15 -mt-10 xl:-mt-18 2xl:-mt-24 "
           src={PembatasLP}
           alt=""
         />
       </div>
 
-      <div className="w-full h-max pt-14 pb-8 md:pt-20 xl:pb-[100px] relative ">
+      <div className="w-full h-max pt-14 pb-8 md:pt-16 xl:pb-[100px] relative ">
         <img className="mx-auto " src={Tentang} alt="Gambar Tentang" />
 
-        <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[200px] ">
+        <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[200px]  ">
           <img
             className="w-52 md:w-72 h-full mx-auto xl:hidden"
             src={LogoTi}
             alt="logo ti"
           />
           {/* gambar logo view laptop */}
-          <div className="order-last hidden relative xl:flex justify-center items-center w-[30rem] h-[26rem] mt-28  mx-auto">
+          <div className="order-last hidden relative xl:flex justify-center items-center w-[30rem] h-[26rem] mt-28  2xl:mt-20 mx-auto">
             <img className="" src={LogoTi} alt="logo ti" />
           </div>
-          <div className="mx-8 xl:mx-0   xl:w-[35rem] ">
+          <div className="mx-8 xl:mx-0  xl:w-[35rem] 2xl:w-[40rem] ">
             <h3 className="text-start font-bold xl:font-extrabold text-lg xl:text-[32px] mt-8 mb-4 xl:mb-8 text-[#252525]">
               Pengertian HMP TI UNESA
             </h3>

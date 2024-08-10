@@ -1,4 +1,4 @@
-import LogoKabinet from "../../assets/kabinetonly.png";
+import LogoKabinet from "../../assets/logo.png";
 
 import PembatasBawah from "../../assets/pembatas.png";
 
@@ -6,11 +6,9 @@ const Home = () => {
   return (
     <div>
       <div className="w-full h-max pb-8  xl:pb-[200px] relative ">
-        {/* <img className="mx-auto " src={Tentang} alt="Gambar Tentang" /> */}
-
         <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[50px] ">
           <img
-            className="w-52 md:w-72 h-full mx-auto xl:hidden"
+            className="w-48 md:w-72 h-full mx-auto xl:hidden"
             src={LogoKabinet}
             alt="Kabinet Logo"
           />
@@ -20,7 +18,7 @@ const Home = () => {
           </div>
           <div className="mx-8 xl:mx-0   xl:w-[35rem] ">
             <h3 className="text-start font-bold xl:font-extrabold text-lg xl:text-[32px] mt-8 mb-4 xl:mb-8 text-white">
-              Pengertian Kabinet
+              Pengertian HMPTI
             </h3>
             <p className="text-justify font-normal text-sm xl:text-2xl mb-5 xl:mb-8 xl:leading-7 text-white">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.

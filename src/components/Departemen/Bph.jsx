@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Bg from "../../assets/opsi.png";
+import Bg from "../../assets/bgabu.png";
 import Tentang from "../../assets/tentang.png";
 import PembatasBawah from "../../assets/pembatas.png";
 import bphfoto from "../../assets/departemen/bph.png";

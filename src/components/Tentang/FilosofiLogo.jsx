@@ -1,4 +1,4 @@
-import Logo from "../../assets/kabinet.svg";
+import Logo from "../../assets/logo.png";
 import Timbangan from "../../assets/Timbangan.svg";
 import Api from "../../assets/api.svg";
 import Sayap from "../../assets/sayap.svg";

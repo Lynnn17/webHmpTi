@@ -16,7 +16,7 @@ import {
   Gedung,
 } from "../../assets/documentations/index";
 
-import Tentang from "../../assets/profile.png";
+import Dokumentasi from "../../assets/dokumentasi.png";
 
 function Documentation() {
   return (
@@ -26,8 +26,12 @@ function Documentation() {
         backgroundImage: `url(${Bg})`,
       }}
     >
-      <div className="w-full py-20 ">
-        <img className="mx-auto " src={Tentang} alt="Gambar Tentang" />
+      <div className="w-full pt-16 pb-20 ">
+        <img
+          className="mx-auto w-[80%] lg:w-[70%] lg:mt-4 h-full 2xl:w-[55%] 2xl:mt-8"
+          src={Dokumentasi}
+          alt="Gambar Tentang"
+        />
 
         <Swiper
           effect={"coverflow"}
@@ -35,7 +39,6 @@ function Documentation() {
           centeredSlides={true}
           initialSlide={2}
           loop={false}
-          slidesPerView={1}
           coverflowEffect={{
             rotate: 3,
             stretch: 0,
@@ -44,62 +47,38 @@ function Documentation() {
           }}
           breakpoints={{
             640: {
+              slidesPerView: 2,
               coverflowEffect: {
                 rotate: 3,
                 stretch: 0,
-                depth: 980,
-                modifier: 2.5,
+                depth: 400,
+                modifier: 3,
               },
             },
             // ketika ukuran layar >= 1024px
             1024: {
+              slidesPerView: 2,
               coverflowEffect: {
                 rotate: 3,
                 stretch: 0,
-                depth: 980,
+                depth: 400,
                 modifier: 3,
               },
             },
           }}
           pagination={{ clickable: true }}
           modules={[EffectCoverflow, Pagination, Navigation]}
-          className="mt-8"
+          className="mt-8 lg:mt-16 "
         >
-          <SwiperSlide className="mb-6 md:mb-8">
-            <img
-              src={Gambar1}
-              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
-              alt="slide_image"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="mb-6 md:mb-6">
-            <img
-              src={Gambar2}
-              className="w-[65%] sm:w-[50%]  mx-auto rounded-3xl"
-              alt="slide_image"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="mb-6 md:mb-8">
-            <img
-              src={Gambar3}
-              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
-              alt="slide_image"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="mb-6 md:mb-8">
-            <img
-              src={Gambar3}
-              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
-              alt="slide_image"
-            />
-          </SwiperSlide>
-          <SwiperSlide className="mb-6 md:mb-8">
-            <img
-              src={Gambar3}
-              className="w-[65%] sm:w-[50%] mx-auto rounded-3xl"
-              alt="slide_image"
-            />
-          </SwiperSlide>
+          {[Gambar1, Gambar2, Gambar3, Gambar3, Gambar3].map((img, index) => (
+            <SwiperSlide key={index} className="mb-8 ">
+              <img
+                src={img}
+                className="w-[65%] sm:w-[90%] 2xl:w-[80%] mx-auto rounded-3xl"
+                alt="slide_image"
+              />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

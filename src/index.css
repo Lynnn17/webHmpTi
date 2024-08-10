@@ -28,6 +28,7 @@
   }
 }
 
+
 .swiper-slide img {
   width: 40rem;
   height: 100%;
@@ -40,6 +41,37 @@
   height: 100%;
   position: relative;
 } */
+
+/* .swiper-slide-prev  {
+  width: 40rem;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide-prev img{
+width: 40rem;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+  
+}
+
+.swiper-slide-active {
+  width: 40rem;
+  height: 100%;
+  position: relative;
+}
+.swiper-slide-active img {
+width: 40rem;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+
+} */
+
+
+
 
 .animation-opacity { animation: pulse  5s cubic-bezier(0.4, 0, 0.6, 1) infinite; -webkit-animation: pulse  5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
