@@ -4,6 +4,7 @@ import Kabinet from "./views/Kabinet";
 import Departemen from "./views/Departemen";
 import Bph from "./components/Departemen/Bph";
 import Tentang from "./views/Tentang";
+import CommingSoon from "./views/CommingSoon";
 
 function App() {
   return (
@@ -11,9 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />}></Route>
         <Route path="/kabinet" element={<Kabinet />}></Route>
-        <Route path="/departemen" element={<Departemen />}>
-          <Route path="bph" element={<Bph />}></Route>
-        </Route>
+        <Route path="/departemen/*" element={<CommingSoon />}></Route>
         <Route path="/tentang" element={<Tentang />}></Route>
       </Routes>
     </BrowserRouter>

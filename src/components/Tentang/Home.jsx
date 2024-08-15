@@ -1,4 +1,4 @@
-import LogoKabinet from "../../assets/logo.png";
+import LogoHimpunan from "../../assets/logo.png";
 
 import PembatasBawah from "../../assets/pembatas.png";
 
@@ -8,13 +8,13 @@ const Home = () => {
       <div className="w-full h-max pb-8  xl:pb-[200px] relative ">
         <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[50px] ">
           <img
-            className="w-48 md:w-72 h-full mx-auto xl:hidden"
-            src={LogoKabinet}
+            className="w-48 md:w-72 h-full mx-auto xl:hidden "
+            src={LogoHimpunan}
             alt="Kabinet Logo"
           />
           {/* gambar logo view laptop */}
-          <div className="order-start hidden relative xl:flex justify-center items-center w-[24rem] h-[15rem] mt-40  mx-auto">
-            <img src={LogoKabinet} alt="Kabinet Logo" />
+          <div className="order-start hidden relative xl:flex justify-center items-center w-[24rem] h-[15rem] mt-24  mx-auto">
+            <img src={LogoHimpunan} alt="Kabinet Logo" />
           </div>
           <div className="mx-8 xl:mx-0   xl:w-[35rem] ">
             <h3 className="text-start font-bold xl:font-extrabold text-lg xl:text-[32px] mt-8 mb-4 xl:mb-8 text-white">

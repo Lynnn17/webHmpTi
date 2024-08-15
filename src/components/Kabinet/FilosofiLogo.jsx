@@ -1,4 +1,4 @@
-import Logo from "../../assets/kabinet.svg";
+import Logo from "../../assets/kabinetonly.png";
 import Timbangan from "../../assets/Timbangan.svg";
 import Api from "../../assets/api.svg";
 import Sayap from "../../assets/sayap.svg";
@@ -6,6 +6,8 @@ import Tangan from "../../assets/tangan.svg";
 import Buku from "../../assets/buku.svg";
 import Bg from "../../assets/bgabu.png";
 import Sambutan from "../../assets/sambutan.png";
+import Warna from "../../assets/warnakabinet.png";
+import Tes from "../../assets/tes.png";
 
 const FilosofiLogo = () => {
   return (
@@ -19,11 +21,33 @@ const FilosofiLogo = () => {
         <div className="py-10 pb-24">
           <img className="mx-auto mt-10" src={Sambutan} alt="" />
 
-          <div className="md:grid flex-col  lg:grid-cols-3 lg:gap-2 md:grid-cols-2 py-10 px-4 ">
+          <div className="grid grid-cols-3 mt-10 mb-10 gap-4   xl:grid-cols-2 xl:w-[70%] xl:mx-auto xl:gap-2 2xl:w-[50%]">
+            <div className="w-full mt-4 md:mt-0">
+              <img
+                className="mx-auto  w-[100%] xl:w-[50%] md:w-[80%] 2xl:w-[50%] "
+                src={Tes}
+                alt=""
+              />
+            </div>
+            <div className="col-span-2 md:col-span-2 xl:col-span-1 ">
+              <p className="text-black text-lg font-bold text-start md:text-xl ">
+                Warna Orange Dan Kuning Bergradasi
+              </p>
+              <p className="text-sm font-bold text-[#304463] text-start mb-1 md:text-base md:my-1 ">
+                Semangat Dan Keberanian
+              </p>
+              <p className=" text-black text-xs font-medium text-start md:text-sm ">
+                Melambangkan dedikasi yang tinggi dan energi yang tak pernah
+                padam dalam mengejar tujuan
+              </p>
+            </div>
+          </div>
+
+          <div className="md:grid flex-col  lg:grid-cols-3 lg:gap-2 md:grid-cols-2 py-10 px-4  ">
             {/* Filosofi Logo */}
             <div className="flex flex-col  items-center ">
               <img
-                className="  mx-auto w-[175px] "
+                className=" md:mt-2 mx-auto w-[180px] "
                 src={Logo}
                 alt="Logo Kabinet"
               />
@@ -45,7 +69,7 @@ const FilosofiLogo = () => {
             {/* Filosofi timbangan */}
             <div className="mt-20 sm:mt-0  flex flex-col  items-center ">
               <img
-                className="  mx-auto w-[175px]"
+                className="  mx-auto w-[145px]"
                 src={Timbangan}
                 alt="Timbangan Kabinet"
               />
@@ -62,7 +86,7 @@ const FilosofiLogo = () => {
             </div>
 
             {/* Filosofi Api */}
-            <div className="mt-20 sm:mt-10 xl:mt-0 flex flex-col  items-center ">
+            <div className="mt-20 sm:mt-10 xl:mt-2 flex flex-col  items-center ">
               <img className="mx-auto w-[145px]" src={Api} alt="Nayla Api" />
               <p className="text-black text-lg font-bold text-center">
                 Nyala Api

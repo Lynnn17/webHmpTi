@@ -9,14 +9,11 @@ import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
-import {
-  Gambar1,
-  Gambar2,
-  Gambar3,
-  Gedung,
-} from "../../assets/documentations/index";
+import { Gambar1, Gambar2, Gambar3 } from "../../assets/documentations/index";
 
 import Dokumentasi from "../../assets/dokumentasi.png";
+
+import { motion } from "framer-motion";
 
 function Documentation() {
   return (
@@ -27,7 +24,10 @@ function Documentation() {
       }}
     >
       <div className="w-full pt-16 pb-20 ">
-        <img
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
           className="mx-auto w-[80%] lg:w-[70%] lg:mt-4 h-full 2xl:w-[55%] 2xl:mt-8"
           src={Dokumentasi}
           alt="Gambar Tentang"

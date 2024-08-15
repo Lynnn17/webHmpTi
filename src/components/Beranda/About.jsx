@@ -4,6 +4,7 @@ import Pembatas from "../../assets/pembatas3.png";
 import PembatasLP from "../../assets/pembataslp.png";
 import Tentang from "../../assets/tentang.png";
 import PembatasBawah from "../../assets/pembatas.png";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
@@ -27,7 +28,14 @@ const About = () => {
       </div>
 
       <div className="w-full h-max pt-14 pb-8 md:pt-16 xl:pb-[100px] relative ">
-        <img className="mx-auto " src={Tentang} alt="Gambar Tentang" />
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="mx-auto "
+          src={Tentang}
+          alt="Gambar Tentang"
+        />
 
         <div className=" h-max mt-10  xl:grid xl:grid-cols-2 xl:mx-24 2xl:mx-40 xl:gap-[200px]  ">
           <img
@@ -39,7 +47,12 @@ const About = () => {
           <div className="order-last hidden relative xl:flex justify-center items-center w-[30rem] h-[26rem] mt-28  2xl:mt-20 mx-auto">
             <img className="" src={LogoTi} alt="logo ti" />
           </div>
-          <div className="mx-8 xl:mx-0  xl:w-[35rem] 2xl:w-[40rem] ">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+            className="mx-8 xl:mx-0  xl:w-[35rem] 2xl:w-[40rem] "
+          >
             <h3 className="text-start font-bold xl:font-extrabold text-lg xl:text-[32px] mt-8 mb-4 xl:mb-8 text-[#252525]">
               Pengertian HMP TI UNESA
             </h3>
@@ -78,7 +91,7 @@ const About = () => {
                 ></path>
               </svg>
             </button>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div>

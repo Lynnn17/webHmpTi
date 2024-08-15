@@ -1,12 +1,23 @@
 import Logo from "../assets/logohmp.png";
+import { motion } from "framer-motion";
 const Footer = () => {
   return (
     <div className="-mt-1 bg-[#31363F]">
       <footer className="grid grid-cols-1 md:grid-cols-3 pt-8 px-6 md:px-24 xl:px-48 items-center justify-center gap-4">
-        <div className="md:mx-auto w-2/4 md:w-3/4 xl:w-2/4  ">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="md:mx-auto w-2/4 md:w-3/4 xl:w-2/4  "
+        >
           <img src={Logo} alt="" />
-        </div>
-        <div className="grid grid-cols-2 md:grid-cols-1  gap-2 xl:text-center">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="grid grid-cols-2 md:grid-cols-1  gap-2 xl:text-center"
+        >
           <div className="">
             <p className="text-white font-semibold text-lg">Contact Us</p>
             <p className="text-white font-light text-sm">hmpti@unesa.ac.id</p>
@@ -20,8 +31,13 @@ const Footer = () => {
             <p className="text-white font-light text-sm">+62 812 1234 5678</p>
             <p className="text-white font-light text-sm">(NONE)</p>
           </div>
-        </div>
-        <div className="xl:text-end">
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
+          className="xl:text-end"
+        >
           <div>
             <p className="text-white font-semibold text-lg">
               Seketariat HMP TI UNESA
@@ -84,10 +100,17 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="text-center text-white py-10  border-t-2 border-white md:col-span-3">
-          Copyright © Departemen Penalaran Riset Dan Teknologi HMP TI UNESA 2024
+        <div className="text-center text-white py-8  border-t-2 border-white md:col-span-3">
+          <motion.p
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+          >
+            Copyright © Departemen Penalaran Riset Dan Teknologi HMP TI UNESA
+            2024
+          </motion.p>
         </div>
       </footer>
     </div>

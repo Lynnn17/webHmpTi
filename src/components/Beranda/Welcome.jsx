@@ -5,6 +5,8 @@ import Bg from "../../assets/bgabu.png";
 import Tag from "../../assets/tag.png";
 import Sambutan from "../../assets/sambutan.png";
 
+import { motion } from "framer-motion";
+
 const Welcome = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -17,12 +19,22 @@ const Welcome = () => {
         }}
       >
         <div className="py-10 pb-24">
-          <img className="mx-auto mt-10" src={Sambutan} alt="" />
+          <motion.img
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ ease: "easeOut", duration: 1 }}
+            className="mx-auto mt-10"
+            src={Sambutan}
+            alt=""
+          />
 
           <div className="md:grid flex-col  lg:grid-cols-4 lg:gap-2 md:grid-cols-2 py-10 px-2 ">
             {/* Kahim */}
             <div className="flex flex-col  items-center ">
-              <img
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ease: "easeOut", duration: 1 }}
                 className="lg:w-[250px]  mx-auto w-[175px]"
                 src={Kahim}
                 alt="Kahim"
@@ -35,19 +47,22 @@ const Welcome = () => {
               </button>
               <div>
                 <img
-                  className="w-[150px] h-[40px] mx-auto mt-[-7px]"
+                  className="w-[200px] h-[40px] mx-auto mt-[-7px] xl:w-[200px]"
                   src={Tag}
                   alt=""
                 />
                 <p className=" flex items-center justify-center text-md   text-white font-semibold mx-auto mt-[-35px] ">
-                  Kahim
+                  Ketua Himpunan
                 </p>
               </div>
             </div>
 
             {/* WAKAHIM */}
             <div className="xl:order-last  flex flex-col  items-center ">
-              <img
+              <motion.img
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ ease: "easeOut", duration: 1 }}
                 className="lg:w-[250px]  mx-auto w-[175px] mt-12 md:mt-2 lg:mt-0"
                 src={Wakahim}
                 alt="Wakahim"
@@ -60,24 +75,31 @@ const Welcome = () => {
               </button>
               <div>
                 <img
-                  className="w-[150px] h-[40px] mx-auto mt-[-7px]"
+                  className="w-[200px] h-[40px] mx-auto mt-[-7px]"
                   src={Tag}
                   alt=""
                 />
                 <p className=" flex items-center justify-center text-md   text-white font-semibold mx-auto mt-[-35px] ">
-                  Wakahim
+                  Wakil Ketua
                 </p>
               </div>
             </div>
 
             {/* Salam */}
             <div className="mt-8 lg:mt-0 text-justify mx-auto flex flex-col px-8 text-[16px] lg:text-[20px]  text-black w-full col-span-2 ">
-              <span className=" font-extrabold whitespace-normal ">
-                Assalamualaikum Wr Wb. Shalom, Om Swastyastu, Namo Buddhaya,
-                Salam Kebajikan Bagi Kita Semua.
-              </span>
+              <motion.span
+                // initial={{ opacity: 0, y: -100 }}
+                // whileInView={{ opacity: 1, y: 0 }}
+                // transition={{ ease: "easeOut", duration: 1 }}
+                className=" font-extrabold whitespace-normal "
+              >
+                Assalamualaikum Wr Wb. Shalom.
+              </motion.span>
               <br />
-              <span
+              <motion.span
+                initial={{ opacity: 0, y: -100 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ ease: "easeOut", duration: 1 }}
                 className={`whitespace-pre-wrap ${
                   isOpen ? null : "line-clamp-[10]"
                 }`}
@@ -106,7 +128,7 @@ const Welcome = () => {
                 officia expedita quam velit repudiandae hic voluptas laboriosam
                 eaque iste. Quisquam alias earum perspiciatis vero enim iusto
                 saepe quos, repellendus
-              </span>
+              </motion.span>
 
               <button
                 onClick={() => setIsOpen(!isOpen)}
@@ -123,9 +145,14 @@ const Welcome = () => {
           </div>
 
           <div>
-            <span className="flex font-extrabold text-[#304463] justify-center mx-auto lg:text-[28px] text-[20px] 2xl:pb-2  ">
+            <motion.span
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ ease: "easeOut", duration: 1 }}
+              className="flex font-extrabold text-[#304463] justify-center mx-auto lg:text-[28px] text-[20px] 2xl:pb-2  "
+            >
               #SatukanGagasCiptakanKarya
-            </span>
+            </motion.span>
           </div>
         </div>
       </div>

@@ -7,6 +7,8 @@ import Kabinet from "../../assets/kabinetlogo.png";
 import BorderAtas from "../../assets/borderatas.png";
 import BorderBawah from "../../assets/borderbawah.png";
 
+import { motion } from "framer-motion";
+
 const Profile = () => {
   return (
     <div
@@ -14,7 +16,10 @@ const Profile = () => {
       style={{ backgroundImage: `url(${Bg})` }}
     >
       <div className="pt-7 pb-4 ">
-        <img
+        <motion.img
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ ease: "easeOut", duration: 1 }}
           className="mx-auto  h-full w-[50%] lg:w-[45%] lg:mt-6 2xl:w-[25%] 2xl:mt-10"
           src={profile}
           alt="Gambar Tentang"
@@ -25,7 +30,7 @@ const Profile = () => {
           <div className="">
             <div className="w-[80%] h-[400px] xl:w-[60%] 2xl:w-[50%]  mx-auto hidden md:flex justify-center items-center">
               <YouTubeEmbed
-                url="https://www.youtube.com/embed/BBzbQAXkQxk?si=2VfwSTRzczZQhy3h"
+                url="https://www.youtube.com/embed/SBI7f5m8NGA?si=aYYn2qnNDXxPOxEd"
                 // height={"600px"}
                 height={"400px"}
                 width={"85%"}
@@ -33,7 +38,7 @@ const Profile = () => {
             </div>
             <div className="w-full md:hidden flex  justify-center items-center">
               <YouTubeEmbed
-                url="https://www.youtube.com/embed/BBzbQAXkQxk?si=2VfwSTRzczZQhy3h"
+                url="https://www.youtube.com/embed/SBI7f5m8NGA?si=aYYn2qnNDXxPOxEdh"
                 height={"270px"}
                 width={"85%"}
               />
@@ -47,7 +52,7 @@ const Profile = () => {
             alt=""
           />
           <img
-            className="animation-opacity w-[40%] h-[250px]  md:w-[28%] md:h-[300px] lg:w-[16%] 2xl:w-[14%] 2xl:h-[400px] -mt-20 opacity-75 md:-mt-28 h-full mx-auto 2xl:-mt-40"
+            className="animation-opacity w-[40%] h-[250px]  md:w-[200px] md:h-[300px] lg:w-[16%] 2xl:w-[14%]  2xl:h-[400px] -mt-20 opacity-75 md:-mt-28 h-full mx-auto 2xl:-mt-40 "
             src={Kabinet}
             alt=""
           />
