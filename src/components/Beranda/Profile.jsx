@@ -52,7 +52,7 @@ const Profile = () => {
             alt=""
           />
           <img
-            className="animation-opacity w-[40%] h-[250px]  md:w-[200px] md:h-[300px] lg:w-[16%] 2xl:w-[14%]  2xl:h-[400px] -mt-20 opacity-75 md:-mt-28 h-full mx-auto 2xl:-mt-40 "
+            className="animation-opacity w-[40%]  h-[250px]  md:w-[200px] md:h-[300px] lg:h-[350px] lg:w-[25%] 2xl:w-[14%] xl:h-[400px] -mt-20 opacity-75 md:-mt-28 h-full mx-auto 2xl:-mt-40 "
             src={Kabinet}
             alt=""
           />

@@ -27,7 +27,7 @@ const About = () => {
         />
       </div>
 
-      <div className="w-full h-max pt-14 pb-8 md:pt-16 xl:pb-[100px] relative ">
+      <div className="w-full h-max pt-14 lg:pt-32 xl:pt-14 pb-8 md:pt-16 xl:pb-[100px] relative ">
         <motion.img
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}

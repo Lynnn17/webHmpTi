@@ -18,13 +18,13 @@ const Footer = () => {
           transition={{ ease: "easeOut", duration: 1 }}
           className="grid grid-cols-2 md:grid-cols-1  gap-2 xl:text-center"
         >
-          <div className="">
+          <div className="lg:mx-auto lg:text-center">
             <p className="text-white font-semibold text-lg">Contact Us</p>
             <p className="text-white font-light text-sm">hmpti@unesa.ac.id</p>
             <p className="text-white font-light text-sm">+62 812 1234 5678</p>
             <p className="text-white font-light text-sm">(NONE)</p>
           </div>
-          <div className="">
+          <div className="lg:mx-auto lg:text-center">
             <p className="text-white font-semibold text-lg">Media Partner</p>
             <p className="text-white font-light text-sm">+62 812 1234 5678</p>
             <p className="text-white font-light text-sm">(NONE)</p>

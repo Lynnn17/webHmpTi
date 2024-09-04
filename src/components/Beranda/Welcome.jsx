@@ -41,24 +41,24 @@ const Welcome = () => {
               />
               <button
                 type="button"
-                className="ring-1 ring-[#304463] bg-[#304463] outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-14 rounded-full"
+                className="ring-1 ring-[#304463] bg-[#304463] outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-14 lg:px-10 xl:px-14  rounded-full"
               >
                 Dawwas Inha Ulhaq
               </button>
               <div>
                 <img
-                  className="w-[200px] h-[40px] mx-auto mt-[-7px] xl:w-[200px]"
+                  className="w-[140px] h-[40px] mx-auto mt-[-7px] xl:w-[200px]"
                   src={Tag}
                   alt=""
                 />
                 <p className=" flex items-center justify-center text-md   text-white font-semibold mx-auto mt-[-35px] ">
-                  Ketua Himpunan
+                  Kahim
                 </p>
               </div>
             </div>
 
             {/* WAKAHIM */}
-            <div className="xl:order-last  flex flex-col  items-center ">
+            <div className="lg:order-last  flex flex-col  items-center ">
               <motion.img
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -69,18 +69,18 @@ const Welcome = () => {
               />
               <button
                 type="button"
-                className="rring-1 ring-[#304463] bg-[#304463] outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-14 rounded-full"
+                className="rring-1 ring-[#304463] bg-[#304463] outline-3 outline-gray-200  focus:outline-5 text-white text-lg font-semibold py-1.5 px-14 lg:px-10 xl:px-14 rounded-full"
               >
                 Muhamad Raasikh F.
               </button>
               <div>
                 <img
-                  className="w-[200px] h-[40px] mx-auto mt-[-7px]"
+                  className="w-[140px] h-[40px] mx-auto mt-[-7px]"
                   src={Tag}
                   alt=""
                 />
                 <p className=" flex items-center justify-center text-md   text-white font-semibold mx-auto mt-[-35px] ">
-                  Wakil Ketua
+                  Wakahim
                 </p>
               </div>
             </div>
