@@ -1,6 +1,6 @@
 import gedungTi from "../../assets/gedungTi.png";
 import Pembatas from "../../assets/pembatas.png";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (

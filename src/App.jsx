@@ -5,6 +5,7 @@ import Departemen from "./views/Departemen";
 import Bph from "./components/Departemen/Bph";
 import Tentang from "./views/Tentang";
 import CommingSoon from "./views/CommingSoon";
+import Artikel from "./views/Artikel";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/kabinet" element={<Kabinet />}></Route>
         <Route path="/departemen/*" element={<CommingSoon />}></Route>
         <Route path="/tentang" element={<Tentang />}></Route>
+        <Route path="/artikel" element={<Artikel />}></Route>
       </Routes>
     </BrowserRouter>
   );
