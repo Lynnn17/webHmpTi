@@ -21,7 +21,7 @@ const ListArtikel = ({ article }) => {
           <p className="font-light text-sm">
             <a
               href={`http://127.0.0.1:8000/artikel?kategory=${article.categories[0].slug}`}
-            >
+            > 
               {article.categories[0].nama}
             </a>
           </p>
