@@ -22,6 +22,7 @@ function App() {
         <Route path="/artikel/:slug" element={<DetailArtikel />}></Route>
         <Route path="/galeri" element={<Galeri />}></Route>
         <Route path="/galeri/:slug" element={<GaleriDetail />}></Route>
+        <Route path="/struktur/:slug" element={<GaleriDetail />}></Route>
       </Routes>
     </BrowserRouter>
   );
