@@ -10,7 +10,6 @@ import Bg2 from "../assets/bgabu.png";
 
 const Kabinet = () => {
   const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(false);
 
   const fetchData = async () => {
     try {

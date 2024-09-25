@@ -9,6 +9,7 @@ import Artikel from "./views/Artikel";
 import DetailArtikel from "./views/DetailArtikel";
 import Galeri from "./views/Galeri";
 import GaleriDetail from "./views/GaleriDetail";
+import Struktur from "./views/Struktur";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/artikel/:slug" element={<DetailArtikel />}></Route>
         <Route path="/galeri" element={<Galeri />}></Route>
         <Route path="/galeri/:slug" element={<GaleriDetail />}></Route>
-        <Route path="/struktur/:slug" element={<GaleriDetail />}></Route>
+        <Route path="/struktur/:slug" element={<Struktur />}></Route>
       </Routes>
     </BrowserRouter>
   );
