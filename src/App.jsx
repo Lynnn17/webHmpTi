@@ -10,6 +10,7 @@ import DetailArtikel from "./views/DetailArtikel";
 import Galeri from "./views/Galeri";
 import GaleriDetail from "./views/GaleriDetail";
 import Struktur from "./views/Struktur";
+import Kepengurusan from "./views/Kepengurusan";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
         <Route path="/galeri" element={<Galeri />}></Route>
         <Route path="/galeri/:slug" element={<GaleriDetail />}></Route>
         <Route path="/struktur/:slug" element={<Struktur />}></Route>
+        <Route path="/kepengurusan/:slug" element={<Kepengurusan />}></Route>
+        <Route path="*" element={<CommingSoon />}></Route>
       </Routes>
     </BrowserRouter>
   );
