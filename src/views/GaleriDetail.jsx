@@ -4,6 +4,8 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import Footer from "../components/Footer";
+import Loading from "../components/Loading";
+import Nodata from "../components/NoData";
 const DetailArtikel = () => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -20,7 +22,7 @@ const DetailArtikel = () => {
       }
 
       const response = await axios.get(
-        `http://127.0.0.1:8000/api/galeri/detail/${slug}`
+        `${import.meta.env.VITE_API_URL}galeri/detail/${slug}`
       );
 
       if (response.data && response.data.model) {
@@ -39,10 +41,8 @@ const DetailArtikel = () => {
     fetchData();
   }, [pathname]);
 
-  console.log("data1", data);
-
-  if (loading) return <p>Loading...</p>;
-  if (!data) return <p>No data available</p>;
+  if (loading) return <Loading />;
+  if (!data) return <Nodata />;
 
   return (
     <>

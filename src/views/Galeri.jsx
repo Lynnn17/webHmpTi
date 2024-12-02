@@ -8,6 +8,8 @@ import Pagination from "../components/Pagination";
 import React, { useState, useEffect, useCallback } from "react";
 import { useSearchParams } from "react-router-dom";
 import axios from "axios";
+import Loading from "../components/Loading";
+import Nodata from "../components/NoData";
 
 const Galeri = () => {
   const [data, setData] = useState(null);
@@ -23,7 +25,7 @@ const Galeri = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://127.0.0.1:8000/api/galeri?page=${currentPage}&search=${
+        `${import.meta.env.VITE_API_URL}galeri?page=${currentPage}&search=${
           searchParams.get("search") || ""
         }`
       );
@@ -52,13 +54,12 @@ const Galeri = () => {
     }
   };
 
-  // Fungsi untuk menangani perubahan halaman pada pagination
   const handlePageChange = (page) => {
     setSearchParams({ page, search: searchParams.get("search") || "" });
   };
 
-  if (loading) return <p>Loading...</p>;
-  if (!data || !data.galeries) return <p>No Data...</p>;
+  if (loading) return <Loading />;
+  if (!data || !data.galeries) return <Nodata />;
 
   return (
     <>
@@ -75,7 +76,7 @@ const Galeri = () => {
             <h1 className="text-3xl font-bold">Galeri Foto</h1>
             <h2>Kilasan galeri foto dari beberapa kegiatan</h2>
           </div>
-          {/* search */}
+
           <div>
             <div className="flex justify-center">
               <div className="w-[90%] relative">

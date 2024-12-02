@@ -4,10 +4,10 @@ const Kepengurusan = (data) => {
   return (
     <>
       <div>
-        <div className="text-black pt-2">
+        <div className="text-black pb-10 px-4 lg:pl-8">
           <img
-            className="w-[80%] md:w-[50%]  h-full "
-            src={`http://127.0.0.1:8000/assets/periode/${data.data.foto}`}
+            className="w-56 md:w-72 xl:w-96   h-full "
+            src={`${import.meta.env.VITE_URL}/assets/periode/${data.data.foto}`}
             alt=""
           />
           <div className="px-3">
@@ -23,7 +23,7 @@ const Kepengurusan = (data) => {
             <div className="pt-3">
               <Link
                 className="bg-blue-800 rounded-[20px] hover:bg-white hover:border-blue-800 hover:border-2 hover:text-blue-800 px-6 py-3 text-white"
-                to={`/struktur/${data.data.slug}`}
+                to={`/kabinet/${data.data.slug}`}
               >
                 Lihat Struktur Kepengurusan
               </Link>

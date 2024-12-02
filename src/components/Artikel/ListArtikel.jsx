@@ -13,7 +13,7 @@ const ListArtikel = ({ article }) => {
           className="w-full h-[250px] lg:h-[220px] object-cover rounded-[30px]"
           src={
             article.foto
-              ? `http://127.0.0.1:8000${article.foto}`
+              ? `${import.meta.env.VITE_URL}${article.foto}`
               : "https://i.ytimg.com/vi//sddefault.jpg"
           }
           alt="Foto Artikel"

@@ -6,6 +6,8 @@ import Bg from "../assets/bgprofile.png";
 import { useLocation } from "react-router-dom";
 import moment from "moment";
 import "moment/locale/id";
+import Nodata from "../components/NoData";
+import Loading from "../components/Loading";
 
 const formatDate = (dateString) => moment(dateString).format("DD MMMM YYYY");
 
@@ -27,7 +29,7 @@ const DetailArtikel = () => {
       }
 
       const response = await axios.get(
-        `http://127.0.0.1:8000/api/artikel/${slug}`
+        `${import.meta.env.VITE_API_URL}artikel/${slug}`
       );
 
       if (response.data && response.data.model) {
@@ -47,13 +49,13 @@ const DetailArtikel = () => {
     fetchArticles();
   }, [pathname]);
 
-  if (loading) return <p>Loading...</p>;
-  if (!data) return <p>No data available</p>;
+  if (loading) return <Loading />;
+  if (!data) return <Nodata />;
 
   const dataDetail = data
     ? data.detail.replace(
         /src="\/assets\/artikel/g,
-        'src="http://127.0.0.1:8000/assets/artikel'
+        `src='${import.meta.env.VITE_URL}/assets/artikel'`
       )
     : "";
 
@@ -69,8 +71,10 @@ const DetailArtikel = () => {
           <div className="flex items-center pt-2">
             <img
               className="w-10 h-10 rounded-full "
-              src={`http://127.0.0.1:8000/assets/anggota/${data.user.foto}`}
-              alt="tess"
+              src={`${import.meta.env.VITE_URL}/assets/anggota/${
+                data.user.foto
+              }`}
+              alt="foto_profile"
             />
             <p className="font-bold pl-2 overflow-hidden whitespace-nowrap text-ellipsis max-w-[180px]">
               {data.user.name}

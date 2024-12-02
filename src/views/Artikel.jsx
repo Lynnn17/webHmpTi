@@ -5,6 +5,8 @@ import { useNavigate, useLocation } from "react-router-dom"; // React Router v6
 import ListArtikel from "../components/Artikel/ListArtikel";
 import Pagination from "../components/Pagination";
 import Bg from "../assets/bgprofile.png";
+import Loading from "../components/Loading";
+import Nodata from "../components/NoData";
 
 const Artikel = () => {
   const [data, setData] = useState(null);
@@ -19,7 +21,7 @@ const Artikel = () => {
   const selectedCategory = searchParams.get("kategori") || null;
   const selectedTag = searchParams.get("tag") || null;
 
-  const baseURL = "http://127.0.0.1:8000/api/artikel/list-berita";
+  const baseURL = `${import.meta.env.VITE_API_URL}artikel/list-berita`;
 
   const buildURL = (page) => {
     let url = `${baseURL}?page=${page}`;
@@ -78,11 +80,11 @@ const Artikel = () => {
   };
 
   if (loading) {
-    return <p>Loading articles...</p>;
+    return <Loading />;
   }
 
   if (!data || !data.articles || !data.articles.data) {
-    return <p>No articles found.</p>;
+    return <Nodata />;
   }
 
   return (
@@ -93,7 +95,7 @@ const Artikel = () => {
         className="-mt-20 md:-mt-32 z-[-2] w-full bg-neutral-950 bg-center bg-cover text-white pb-16"
         style={{ backgroundImage: `url(${Bg})` }}
       >
-        <div className="text-center py-10 pt-28 lg:pt-36">
+        <div className="text-center py-10 pt-28 lg:pt-44">
           <h1 className="text-3xl font-bold">Articles</h1>
           <h2>Daftar artikel dan informasi lainnya</h2>
         </div>
