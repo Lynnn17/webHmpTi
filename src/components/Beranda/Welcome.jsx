@@ -104,30 +104,23 @@ const Welcome = () => {
                   isOpen ? null : "line-clamp-[10]"
                 }`}
               >
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                mollitia ab accusantium eum autem saepe, corrupti distinctio
-                quos culpa, laboriosam est ipsa unde. Nostrum accusamus sit
-                quisquam laboriosam? Corporis eius dolore doloribus quos numquam
-                accusantium eligendi! Temporibus voluptatem reprehenderit
-                asperiores! Quos, sequi. Quae labore similique unde iste rerum
-                expedita ab magnam officia quia perspiciatis? Natus doloremque
-                illo amet esse libero autem, officia dolore! Recusandae eligendi
-                quia dignissimos eos odit a ipsum autem facere, velit tenetur
-                dolorum nesciunt illo aut voluptatibus explicabo neque harum
-                quibusdam nobis libero quas. Quaerat, enim explicabo. Quam
-                nesciunt labore repellat modi molestiae alias harum molestias
-                veniam officiis blanditiis quas, voluptatum assumenda illo
-                accusamus corporis inventore culpa ullam vel vitae, atque
-                excepturi. Iure ratione iste itaque magnam, facere placeat
-                nulla. Est assumenda ipsa animi praesentium corrupti,
-                accusantium natus accusamus, mollitia excepturi ab harum qui hic
-                modi error perferendis deleniti, repellat reprehenderit
-                exercitationem. Voluptate delectus molestias saepe id totam
-                modi, ipsa odio. Laborum nemo commodi hic earum blanditiis
-                accusamus recusandae corporis inventore ab culpa! Architecto
-                officia expedita quam velit repudiandae hic voluptas laboriosam
-                eaque iste. Quisquam alias earum perspiciatis vero enim iusto
-                saepe quos, repellendus
+                Puji dan syukur kita panjatkan kepada Tuhan Yang Maha Esa atas
+                rahmat dan karunia-Nya yang selalu menyertai langkah kita.
+                Himpunan Mahasiswa Prodi Teknik Informatika (HMTI) Kabinet Gagas
+                Karya hadir membawa semangat baru untuk mengukir sejarah bagi
+                keluarga besar Prodi Teknik Informatika. Dengan motto "TI BRAVO,
+                INFORMATIKA VIVA LA HIMTI", kami bertekad untuk memberikan
+                kontribusi nyata demi kemajuan dan kebermanfaatan bagi seluruh
+                mahasiswa Teknik Informatika. Kami akan berjuang dengan sepenuh
+                hati melalui aspek Pengembangan, Pelayanan, Pengabdian, dan
+                Pergerakan - menjadi wadah bagi mahasiswa untuk tumbuh,
+                berinovasi, dan bersinergi. Kebersamaan adalah kunci utama kami
+                dalam menghadapi tantangan dan mewujudkan impian bersama. Dengan
+                semangat kolektif yang membara, HMTI Kabinet Gagas Karya siap
+                menjadi pena yang mengukir cerita-cerita inspiratif di setiap
+                lembaran. Bersama kita wujudkan visi dan misi Prodi Teknik
+                Informatika yang unggul, bermartabat, dan membawa manfaat bagi
+                Indonesia. TI BRAVO! INFORMATIKA VIVA LA HIMTI!
               </motion.span>
 
               <button

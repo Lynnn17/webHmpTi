@@ -1,4 +1,4 @@
-import gedungTi from "../../assets/gedungTi.png";
+import TI from "../../assets/TI.png";
 import Pembatas from "../../assets/pembatas.png";
 import { motion } from "framer-motion";
 
@@ -31,9 +31,9 @@ const Home = () => {
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ ease: "easeOut", duration: 1 }}
-              className=" mt-10 sm:w-[600px] w-[350px] lg:w-[600px] 2xl:w-[750px] lg:h-full "
-              src={gedungTi}
-              alt="Gedung TI Unesa"
+              className=" mt-10 sm:w-[600px] w-[500px] lg:w-[600px] 2xl:w-[750px] lg:h-full "
+              src={TI}
+              alt="Foto HMPTI Unesa"
             />
           </div>
         </div>

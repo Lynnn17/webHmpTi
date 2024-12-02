@@ -9,7 +9,7 @@ import BorderBawah from "../../assets/borderbawah.png";
 
 import { motion } from "framer-motion";
 
-const Profile = () => {
+const Profile = (data) => {
   return (
     <div
       className="-mt-16 h-full w-full bg-cover bg-no-repeat"
@@ -53,7 +53,7 @@ const Profile = () => {
           />
           <img
             className="animation-opacity w-[40%]  h-[250px]  md:w-[200px] md:h-[300px] lg:h-[350px] lg:w-[25%] 2xl:w-[14%] xl:h-[400px] -mt-20 opacity-75 md:-mt-28 h-full mx-auto 2xl:-mt-40 "
-            src={Kabinet}
+            src={`${import.meta.env.VITE_URL}/assets/periode/${data.data}`}
             alt=""
           />
           <img
